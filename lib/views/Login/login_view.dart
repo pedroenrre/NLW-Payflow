@@ -60,7 +60,9 @@ class _LoginViewState extends State<LoginView> {
                       vertical: 40,
                     ),
                     child: SocialLoginButton(
-                      onTap: loginController.googleSignIn,
+                      onTap: () {
+                        loginController.googleSignIn(context);
+                      },
                     ),
                   ),
                 ],
